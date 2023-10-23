@@ -45,12 +45,10 @@
 	</body>
 	<script>
     		przycisk.addEventListener('click', () => {
-			let liczba = num.value;
-			var suma = liczba * 2;
 			if (check.checked) {
 				wynik.innerHTML = "Dowieziemy Twoją pizzę za darmo";
 			} else if (check.checked === false) {
-				wynik.innerHTML = "Dowóz będzie Cię kosztował " + suma + " złotych";
+				wynik.innerHTML = "Dowóz będzie Cię kosztował " + (num.value * 2) + " złotych";
 			}
 		});
 	</script>
